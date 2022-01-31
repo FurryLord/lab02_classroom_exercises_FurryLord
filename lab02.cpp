@@ -7,7 +7,6 @@ int main(){
   cout << "multiplication: " << mul(3,5)<<endl;
   cout << ex1() << endl;
   cout << ex2() << endl;
-  
 }
 
 

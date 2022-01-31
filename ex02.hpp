@@ -24,9 +24,9 @@ mydata heroes[]
 string printdata(mydata* p)
 {
    stringstream buffer;
-   string name = "";// TODO: assign the const name_ in p to the variable name;
+   string name = p->name_;// TODO: assign the const name_ in p to the variable name;
    buffer << "Hello. I am " << name << ". ";
-   if (true)// TODO: if p is a hero
+   if (p->name_=="hero")// TODO: if p is a hero
       buffer << "I am a hero." << endl;
    else
       buffer << "I am a villain." << endl;
@@ -38,11 +38,14 @@ string ex2(){
    buffer << sizeof(mydata) << " " << sizeof(mydata*) << endl;
 
    // Use a For Loop to call our printdata(mydata*) function
-   // over all our heroes[]  
-   for (; ;) // TODO: fix as descripted in the comment right above
+   // over all our heroes[]
+    for (int i = 0; i < 5; ++i) {
+        buffer << printdata(heroes);
+    }
+   /*for (; ;) // TODO: fix as descripted in the comment right above
    {
-      buffer << printdata(p);
-   }
+
+   }*/
 
    return buffer.str();
 }
