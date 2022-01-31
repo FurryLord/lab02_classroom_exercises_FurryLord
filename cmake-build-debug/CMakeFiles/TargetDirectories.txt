@@ -1,0 +1,3 @@
+C:/GitHub/lab02-classroom-exercises-FurryLord/cmake-build-debug/CMakeFiles/lab02_classroom_exercises_FurryLord.dir
+C:/GitHub/lab02-classroom-exercises-FurryLord/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/GitHub/lab02-classroom-exercises-FurryLord/cmake-build-debug/CMakeFiles/rebuild_cache.dir

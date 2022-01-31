@@ -1,7 +1,7 @@
-#pragma once // prevents multiple definitions
+#pragma once // Prevents multiple definitions
 
 #include <iostream>
-#include <string>  
+#include <string>
 #include <sstream>
 using namespace std;
 
@@ -13,36 +13,31 @@ string ex1();
 
 string ex1()
 {
-   stringstream buffer;
+    stringstream buffer;
 
-   // Define x; an integer variable x=5;
-   int x=5; // TODO: fix
+    // Define x; an integer variable x=5;
+    int x = 5;
 
-   // Pointer is used to store address of variable
-   // Define y; a pointer to an integer, then initialize it with the address of x;
-   int *y; // TODO: fix
-   y=&x;
+    // Pointer is used to store address of variable
+    // Define y; a pointer to an integer, then initialize it with the address of x;
+    int *y = &x;
 
-   buffer << "x = " << x << ", *y = " << *y << endl;
-   // TODO: Apply following operation: x = x + 2;
-   // What do you think the output is going to be?
-   x = x+2; // TODO: fix
+    buffer << "x = " << x << ", *y = " << *y << endl;
+    // Apply following operation: x = x + 2;
+    // What do you think the output is going to be?
+    x = x + 2;
 
-   buffer << "x = " << x << ", *y = " << *y << endl;
+    buffer << "x = " << x << ", *y = " << *y << endl;
 
-
-   
-   // Apply following operations:
-   // *y = *y + 7;  x = *y - 2;
+    // Apply following operations:
+    // *y = *y + 7;  x = *y - 2;
+    // What do you think the output is going to be?
     *y = *y + 7;
     x = *y - 2;
-   // What do you think the output is going to be?
-   x = x; // TODO: fix
-   y = y; // TODO: fix
 
-   buffer << "x = " << x << ", *y = " << *y << endl;
-   
-   cout << buffer.str() << endl;
-   return buffer.str();
+    buffer << "x = " << x << ", *y = " << *y << endl;
+
+    cout << buffer.str() << endl;
+    return buffer.str();
 }
 
